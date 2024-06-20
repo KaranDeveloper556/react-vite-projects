@@ -1,0 +1,9 @@
+.Hooks_Mini_Project01{
+    background-color: rgb(42, 42, 42);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}

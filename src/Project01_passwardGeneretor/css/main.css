@@ -1,0 +1,34 @@
+.Passward_generator_sec {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(189, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Passward_generator_sec .Generator_container {
+  padding: 1.5rem;
+  background-color: antiquewhite;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  border-radius: 1.5vh;
+}
+.Passward_generator_sec .Generator_container h1 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  background-clip: content-box;
+}
+.Passward_generator_sec .Generator_container #input_pass {
+  width: 20rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 1vh 0vh 0vh 1vh;
+}
+.Passward_generator_sec .Generator_container .input_copyBtn #copy_btn {
+  height: 3.5rem;
+  position: relative;
+  top: -5px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.Contaienr {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(189, 255, 255);
+}
+.Contaienr h1 {
+  text-align: center;
+}
+.Contaienr .btn_box {
+  background-color: whitesmoke;
+  margin: 2vh 0vh;
+  padding: 2vh;
+  box-shadow: 15px 15px black;
+  border-radius: 2vh;
+  border: 2px solid black;
+}
+
+.btn {
+  margin: 0vh 1vh;
+  padding: 1.5vh;
+  font-size: 1.5vh;
+  border-radius: 1vh;
+}/*# sourceMappingURL=brchanger.css.map */
