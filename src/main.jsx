@@ -10,11 +10,14 @@ import Passward_generator from "./Project01_passwardGeneretor/index";
 import Todo from './Project04_TodoList/Todo';
 import Mini_Project01 from './Project00_All_About_Hooks/Mini_Project01';
 import Login_page from './Project04_UnderStanding_useContext/Login_page';
+import UserContextProvider from './Context/UserContextProvider'
+import Profile_page from './Project04_UnderStanding_useContext/Profile_page';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navigation />
+      <UserContextProvider>
+        <Navigation />
         <Routes>
           <Route path='/' element={<><LandingPage /><BgChnager /><Passward_generator /></>} />
           <Route path='/BgChnager' element={<BgChnager />} />
@@ -22,8 +25,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/CWH_api_prac' element={<CWH_api_prac />} />
           <Route path='/todo' element={<Todo />} />
           <Route path='/hooks_mini_project01' element={<Mini_Project01 />} />
-          <Route path='/understanding_useContext' element={<Login_page />} />
+          <Route path='/understanding_useContext' element={<><Login_page /> <Profile_page/></>} />
         </Routes>
+      </UserContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
