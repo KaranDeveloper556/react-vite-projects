@@ -6,7 +6,6 @@ function useCurrency(currency) {
         ()=>{
             let Fetching = fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`);
             Fetching.then((res)=>res.json()).then((data)=>{setFetched_Data(data)})
-
         }
     ,[currency])
     
