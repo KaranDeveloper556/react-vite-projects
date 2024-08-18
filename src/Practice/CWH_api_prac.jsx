@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 function CWH_api_prac() {
     let [FetchedData, SetFetchedData] = useState([])
@@ -20,7 +20,7 @@ function CWH_api_prac() {
             {FetchedData.map(
                 (element) => {
                     return (
-                        <div className="card" key={element.id}>
+                        <div className="practice-card" key={element.id}>
                             <h2>{element.title}</h2>
                             <h4>Discrption{element.body}</h4>
                             <p>Card ID :-- {element.userId}</p>
