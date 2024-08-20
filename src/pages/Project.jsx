@@ -23,7 +23,7 @@ const Project = () => {
                     <NavLink to='/projects/web_zoofari'><Card heading='Website Zoofari' /></NavLink>
                 </button>
                 <button>
-                    <NavLink to='/projects/defult'><Card heading='Default' /></NavLink>
+                    <NavLink to='/projects/todo'><Card heading='Todo' /></NavLink>
                 </button>
                 <button>
                     <NavLink to='/projects/defult'><Card heading='Default' /></NavLink>

@@ -22,30 +22,33 @@ import Profile_page from './Project04_UnderStanding_useContext/Profile_page';
 //Context
 import UserContextProvider from './Context/UserContextProvider'
 import TextMarque from './components/TextMarque.jsx';
+import { TodoProvider } from './Context/Todo.js';
 
 
 const WebRoutes = () => {
     return (
         <BrowserRouter>
             <UserContextProvider>
-                <Navigation />
-                <Routes>
-                    <Route path='/' element={<><HeroSection /><TextMarque /></>} />
-                    <Route path='/about' element={<About />} />
+                <TodoProvider>
+                    <Navigation />
+                    <Routes>
+                        <Route path='/' element={<><HeroSection /><TextMarque /></>} />
+                        <Route path='/about' element={<About />} />
 
-                    {/* Projects Routes */}
-                    <Route path='/projects' element={<Project />} />
-                    <Route path='/projects/passwardGenerator' element={<Passward_generator />} />
-                    <Route path='/projects/bgChanger' element={<BgChanger />} />
-                    <Route path='/projects/hooks_mini_project01' element={<Mini_Project01 />} />
-                    <Route path='/projects/understanding_useContext' element={<><Login_page /> <Profile_page /></>} />
+                        {/* Projects Routes */}
+                        <Route path='/projects' element={<Project />} />
+                        <Route path='/projects/passwardGenerator' element={<Passward_generator />} />
+                        <Route path='/projects/bgChanger' element={<BgChanger />} />
+                        <Route path='/projects/hooks_mini_project01' element={<Mini_Project01 />} />
+                        <Route path='/projects/understanding_useContext' element={<><Login_page /> <Profile_page /></>} />
 
-                    {/* Practice Routes */}
-                    <Route path='/practice' element={<CWH_api_prac />} />
+                        {/* Practice Routes */}
+                        <Route path='/practice' element={<CWH_api_prac />} />
 
-                    {/* Contact Routes */}
-                    <Route path='/contact' element={<Contact />} />
-                </Routes>
+                        {/* Contact Routes */}
+                        <Route path='/contact' element={<Contact />} />
+                    </Routes>
+                </TodoProvider>
             </UserContextProvider>
         </BrowserRouter>
     )
